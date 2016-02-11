@@ -1,0 +1,54 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:id="@+id/box"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/dialog"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:clickable="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_delete"
+            android:id="@+id/buttonX"
+            android:clickable="true" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/lista_edita_obra"
+                android:layout_weight="1"
+                android:divider="#7a7a7a"
+                android:textColor="@android:color/black"
+                android:dividerHeight="2dp"
+                android:layout_above="@+id/linearLayout8"
+                android:layout_alignParentTop="true"
+                android:choiceMode="singleChoice"
+                android:listSelector="#dc494949"
+                android:background="@drawable/listview" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/box"
+    android:weightSum="1"
+    android:background="@drawable/dialog">
+
+    <FrameLayout
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_delete"
+            android:id="@+id/buttonX"
+            android:clickable="true" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Bcadastro"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="false"
+            android:text="@string/cadastro_user"
+            android:focusableInTouchMode="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/editar_user"
+            android:id="@+id/Beditcadastro" />
+    </LinearLayout>
+
+</LinearLayout>
